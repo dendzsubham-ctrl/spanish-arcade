@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores en Español</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <main class="shell">
+    <a class="back-link" href="../index.html">← Back to index</a>
+
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">Spanish food & drink</p>
+        <h1>Sabores en Español</h1>
+        <p class="subtitle">Learn greetings, then order like a pro by matching Spanish words for food and drinks.</p>
+      </div>
+      <div class="scoreboard">
+        <div><span>Score</span><strong id="score">0</strong></div>
+        <div><span>Streak</span><strong id="streak">0</strong></div>
+        <div><span>Level</span><strong id="level">1</strong></div>
+      </div>
+    </section>
+
+    <section class="card game-panel">
+      <div class="prompt-row">
+        <div>
+          <p class="label">Round <span id="round">1</span></p>
+          <h2 id="prompt">Choose the Spanish word for “apple”.</h2>
+        </div>
+        <div class="meter">
+          <div class="meter-bar"><span id="meter-fill"></span></div>
+          <p id="objective">Warm up with common café words.</p>
+        </div>
+      </div>
+
+      <div id="choices" class="choices" aria-live="polite"></div>
+
+      <div class="status-row">
+        <p id="feedback" class="feedback">Pick an answer to begin.</p>
+        <button id="nextBtn" class="next-btn" disabled>Next</button>
+      </div>
+    </section>
+
+    <section class="card glossary">
+      <h3>Vocabulary you’ll meet</h3>
+      <ul>
+        <li><strong>pan</strong> — bread</li>
+        <li><strong>agua</strong> — water</li>
+        <li><strong>queso</strong> — cheese</li>
+        <li><strong>café</strong> — coffee</li>
+        <li><strong>manzana</strong> — apple</li>
+        <li><strong>jugo</strong> — juice</li>
+      </ul>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

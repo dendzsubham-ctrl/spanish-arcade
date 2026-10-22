@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Clash: Spanish Colours</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">Spanish learning game</p>
+      <h1>Color Clash: Spanish Colours</h1>
+      <p class="intro">Match the Spanish colour word to the card, then level up as the patterns get trickier. Learn while you play.</p>
+      <a class="back-link" href="../index.html">← Back to the index</a>
+    </header>
+
+    <section class="scoreboard" aria-label="Game status">
+      <div><span class="label">Score</span><strong id="score">0</strong></div>
+      <div><span class="label">Streak</span><strong id="streak">0</strong></div>
+      <div><span class="label">Level</span><strong id="level">1</strong></div>
+    </section>
+
+    <section class="game-card">
+      <div class="prompt-row">
+        <p class="prompt-label">Choose the word for this colour:</p>
+        <div id="swatch" class="swatch" aria-hidden="true"></div>
+      </div>
+      <h2 id="question">¿Qué color es?</h2>
+      <p id="hint" class="hint">Tap the correct Spanish word.</p>
+      <div id="choices" class="choices" role="group" aria-label="Answer choices"></div>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+      <button id="nextBtn" class="next-btn" type="button">Next challenge</button>
+    </section>
+
+    <section class="guide">
+      <h3>Colour guide</h3>
+      <ul>
+        <li><strong>rojo</strong> = red</li>
+        <li><strong>azul</strong> = blue</li>
+        <li><strong>verde</strong> = green</li>
+        <li><strong>amarillo</strong> = yellow</li>
+        <li><strong>negro</strong> = black</li>
+        <li><strong>blanco</strong> = white</li>
+      </ul>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

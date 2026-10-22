@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hola, Héroe!</title>
+  <link rel="stylesheet" href="../common.css">
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <main class="shell">
+    <a class="back-link" href="../index.html">← Back to index</a>
+    <section class="hero">
+      <p class="eyebrow">Spanish greetings and polite introductions</p>
+      <h1>Hola, Héroe!</h1>
+      <p class="lede">Match greetings, farewells, and introductions to the right Spanish phrase before the crowd cheers or the timer runs out.</p>
+      <div class="stats">
+        <div><span>Score</span><strong id="score">0</strong></div>
+        <div><span>Streak</span><strong id="streak">0</strong></div>
+        <div><span>Level</span><strong id="level">1</strong></div>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <div class="prompt-wrap">
+        <p class="label">Choose the best Spanish phrase</p>
+        <div id="prompt" class="prompt"></div>
+        <div id="context" class="context"></div>
+      </div>
+
+      <div id="choices" class="choices" aria-live="polite"></div>
+      <div id="feedback" class="feedback" aria-live="polite"></div>
+
+      <div class="footer-row">
+        <button id="nextBtn" class="primary" type="button">Next challenge</button>
+        <button id="restartBtn" class="secondary" type="button">Restart</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
